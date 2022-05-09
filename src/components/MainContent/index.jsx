@@ -2,6 +2,7 @@ import React from 'react'
 import './MainContent.scss'
 
 import Header from '../Header'
+import Routers from '../../routers/Routers'
 import Dashboard from '../../pages/Dashboard'
 
 export default function MainContent() {
@@ -11,7 +12,7 @@ export default function MainContent() {
         <div className="container">
             <div className="row">
                 <Header />
-                <Dashboard/>
+                <Routers/>
             </div>
         </div>
     </div>

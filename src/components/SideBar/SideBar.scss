@@ -23,6 +23,7 @@
         font-weight: 700;
         font-size: 18px;
         transition: all 1 ease-in-out;
+        user-select: none;
 
         &:hover{
             cursor: pointer;

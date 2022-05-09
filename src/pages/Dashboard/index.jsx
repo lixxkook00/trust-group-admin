@@ -259,6 +259,108 @@ export default function Dashboard() {
                         </div>
                     </div>
                 </div>
+
+                {/* content text */}
+                <div className="col-xl-12 font-size-18">
+                    <div className="content-text primary-border mt-10 pd-20">
+                       <div className="centering fradient-text font-size-18 font-weight-600 tac">
+                            THE SECRET OF LIVING A PEACEFUL AND PROSPEROUS LIFE WITH TRUST GROUP WITH “CAR BONUS FUND” AND “HOUSING BONUS FUND”
+                       </div>
+                       <span className="fradient-text">
+                           I. CAR BONUS FUND
+                       </span>
+                       <p className="section-num">
+                           1. Conditions:
+                       </p>
+                       <p>
+                           - Loan turnover of 5 different lines, each line reached {`>`}= $ 100,000
+                       </p>
+                       <p>
+                           - Sales of personal loans reached {`>`}= $ 5,000
+                       </p>
+                       <p>
+                           - Sales will be accumulated until the conditions are met (Successful loan turnover will start calculating from September 1, 2021).
+                       </p>
+                       <p className="section-num">
+                           2. Benefits:
+                       </p>
+                       <p>
+                           - $ 10,000 instantly received, and $ 500 continuously received for next 24 months.
+                       </p>
+                       <span className="fradient-text">
+                           II. HOUSING BONUS FUND
+                       </span>
+                       <p className="section-num">
+                           1. Conditions:
+                       </p>
+                       <p>
+                           - Loan turnover of 5 different lines, each line reached {`>`}= $ 500,000
+                       </p>
+                       <p>
+                           - Sales of personal loans reached {`>`}= $ 10,000
+                       </p>
+                       <p>
+                           - Sales will be accumulated until the conditions are met (Successful loan turnover will start calculating from September 1, 2021).
+                       </p>
+                       <p className="section-num">
+                           2. Benefits:
+                       </p>
+                       <p>
+                           - $ 40,000 instantly received, and $ 1,000 continuously received for next 36 months.
+                       </p>
+                       <span className="fradient-text">
+                          III. NOTE:
+                       </span>
+                        <p>
+                            - This program applies to all Global TRUST GROUP markets;
+                        </p>  
+                        <p>
+                            - This program will start from September 1, 2021 until customers meet the conditions to receive the rewards;
+                        </p>  
+                        <p>
+                            - If you have received a CAR BONUS, the loan turnover will start to be calculated until the conditions for receiving the HOUSING BONUS FUND are met;
+                        </p>  
+                        <p>
+                            - The rewards will be transferred to your wallet on TRUST GROUP back-office;
+                        </p>  
+                        <p>
+                            - The new LOAN turnover is calculated from the following sources: deposit, internal transfer, personal owned TGT;
+                        </p>  
+                        <p>
+                            - The LOAN sales will not be counted from any terminated contract;
+                        </p>  
+                        <p>
+                            - The Borrowing turnover is not counted from our P2P Lending Program;
+                        </p>  
+                        <p>
+                            - A congratulatory email and notification will be sent out to customers who are eligible to receive the rewards;
+                        </p>  
+                        <p>
+                            - A bonus of $ 10,000 or $ 40,000 will be sent to you within 72 hours when the conditions are met;
+                        </p>  
+                        <p>
+                            - Customers are required to use their prize money to own a car according to the purpose of the “CAR BONUS FUND” program. And send a proof of car ownership information to this email address: support@tgtholding.com.
+                        </p>  
+                        <p>
+                            - An extra Bonus of $ 500 per month for 24 months from the time when conditions are met, and verified by our support department with full ownership documents. The sooner you own a car, the faster you will receive your monthly bonus.
+                        </p>  
+                        <p>
+                            - Customers are required to use their prize money to own a house according to the purpose of the “HOUSING BONUS FUND” program. And send a proof of home ownership information to this email address: support@tgtholding.com.
+                        </p>  
+                        <p>
+                            - An extra Bonus of $ 1,000 per month for 36 months from the time when conditions are met, and verified by our support department with full ownership documents. The sooner you own a house, the faster you will receive your monthly bonus.
+                        </p>  
+                        <p>
+                            - For more assistance or support, please contact our marketing team or email: support@tgtholding.com
+                        </p>
+                        <span className="fradient-text">
+                          BUILDING YOUR LIFE WITH TRUST GROUP
+                       </span>
+                       <span className="fradient-text">
+                          TRUST GROUP – TRUST IS THE FIRST.
+                       </span>  
+                    </div>
+                </div>
             </div>
         </div>
     </div>

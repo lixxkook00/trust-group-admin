@@ -7,6 +7,7 @@ export default function Header() {
         <div className="header">
             <div className="header-logo">
                 <img src="/assets/img/title - dashboard.png" alt="" />
+                {/* <img src="/assets/img/logoP2P.png" alt="" /> */}
             </div>
             <div className="header-infor">
                 <div className="header-infor-avt">
@@ -14,7 +15,7 @@ export default function Header() {
                 </div>
                 <div className="header-infor-text">
                     <p>Welcome</p>
-                    <h2>Admin</h2>
+                    <h2>Lê Quang Linh</h2>
                 </div>
             </div>
         </div>
