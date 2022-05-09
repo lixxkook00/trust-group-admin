@@ -1,0 +1,31 @@
+@import '../../../public/scss/variable';
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    
+    &-logo{
+        height: 45px;
+    }
+
+    &-infor{
+        display: flex;
+        
+        &-avt{
+            height: 50px;
+            border-radius: 4px;
+            border: 2px solid $primary-color;
+            margin: 0 8px;
+        }
+
+        &-text{
+            p{
+                font-size: 14px;
+            }
+            h2{
+
+            }
+        }
+    }
+}

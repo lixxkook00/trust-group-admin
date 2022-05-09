@@ -1,0 +1,25 @@
+@import '../public/scss/utils';
+@import '../public/scss/responsive';
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.App{
+  display: flex;
+}
+
+img{
+  height: 100%;
+}
+
+p{
+  margin: 0;
+}
+

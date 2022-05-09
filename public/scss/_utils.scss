@@ -1,0 +1,72 @@
+@import '/public/scss/variable';
+
+// style in line
+.m-0{
+    margin: 0 !important;
+}
+
+.mt-10{
+    margin-top: 10px;
+}
+
+.mt-40{
+    margin-top: 40px;
+}
+
+.tac{
+    text-align: center !important;
+}
+
+.centering{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.justify-space-between{
+    justify-content: space-between !important;
+}
+
+.custom-row{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.custom-col-2{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+// utils element
+.primary-button{
+    background-image: $primary-gradient-reverse;
+    font-weight: 700;
+    color: $primary-gray;
+    border-radius:6px;
+    padding: 6px 0;
+    text-align: center;
+    transition: all 0.5 ease-in-out;
+
+    &:hover{
+        cursor: pointer;
+        opacity: .6;
+        color: $white;
+    }
+}
+
+.fradient-text{
+    background: -webkit-linear-gradient(#FCE677, #906B3E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}

@@ -1,0 +1,43 @@
+@import '../../../public/scss/variable';
+@import '../../../public/scss/utils';
+
+.cart4{
+    position: relative;
+
+    &-bg{
+        width: 100%;
+        height: auto;
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+    }
+
+    &-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 80%;
+        text-align: center;
+    }
+
+    &-title{
+        color: $white;
+        font-size:16px;
+        font-weight: 600;
+    }
+
+    &-value{
+        font-size: 28px;
+        font-weight: 700;
+        background: -webkit-linear-gradient(#FCE677, #906B3E);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &-btn{
+        width: 40%;
+        margin: auto;
+        margin-top: 4px;
+    }
+}
