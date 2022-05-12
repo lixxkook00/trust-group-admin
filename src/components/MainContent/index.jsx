@@ -3,7 +3,6 @@ import './MainContent.scss'
 
 import Header from '../Header'
 import Routers from '../../routers/Routers'
-import Dashboard from '../../pages/Dashboard'
 
 export default function MainContent() {
   

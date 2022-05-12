@@ -12,9 +12,6 @@ export default function LoanStatusTable() {
         <div>Date</div>
         <div>Status</div>
       </div>
-      <tr>
-   
-</tr>
       <div className="wrap-table">
         <table className="table table-default">
           <tbody >

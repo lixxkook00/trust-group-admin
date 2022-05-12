@@ -5,42 +5,49 @@ import {Link} from 'react-router-dom'
 
 const btnList = [
     {
+        id:0,
         active: true,
         iconClass: "fa-solid fa-align-left",
         name: "DASHBOARD",
-        url: "/"
+        url: ""
     },
     {
+        id:1,
         active: false,
         iconClass: "fa-solid fa-arrows-spin",
         name: "P2P",
         url: "p2p"
     },
     {
+        id:2,
         active: false,
         iconClass: "fa-solid fa-wallet",
         name: "WALLET",
         url: "wallet"
     },
     {
+        id:3,
         active: false,
         iconClass: "fa-solid fa-chart-line",
         name: "ACTIVITY",
         url: "activity"
     },
     {
+        id:4,
         active: false,
         iconClass: "fa-brands fa-affiliatetheme",
         name: "AFFILIATE",
         url: "affiliate"
     },
     {
+        id:5,
         active: false,
         iconClass: "fa-solid fa-gear",
         name: "SETTING",
         url: "setting"
     },
     {
+        id:6,
         active: false,
         iconClass: "fa-solid fa-right-from-bracket",
         name: "LOG OUT",
@@ -51,6 +58,12 @@ const btnList = [
 
 export default function SideBar() {
     const [indexActive,setIndexActive] = useState(0)
+
+    // active side bar item by link
+    useEffect(() => {
+        const currentBtn = btnList.find((btn) => btn.url === window.location.pathname.replace('/',''))
+        setIndexActive(currentBtn.id)
+    },[])
   return (
     <div className="sidebar">
         <div className="sidebar-logo">

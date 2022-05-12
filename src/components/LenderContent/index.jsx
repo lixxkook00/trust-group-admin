@@ -57,7 +57,7 @@ export default function LenderConten() {
                     }}
                     >
                     <MenuItem style={{ fontSize: 14}}  value={0}>
-                        <emx>150 days</emx>
+                       150 days
                     </MenuItem>
                     <MenuItem style={{ fontSize: 14}} value={1}>90 days</MenuItem>
                     <MenuItem style={{ fontSize: 14}} value={2}>30 days</MenuItem>
