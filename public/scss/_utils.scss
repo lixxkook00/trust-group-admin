@@ -41,6 +41,10 @@
     bottom: -14px !important;
 }
 
+.margin-horizontal-5{
+    margin: 0 5px;
+}
+
 .height-100{
     height: 100%;
 }
@@ -202,6 +206,15 @@ input:focus{
 .primary-select{
     height: 200px;
     width: 100%;
+}
+
+.primary-icon{
+    color: $primary-color;
+    transition: all 0.5s ease-in-out;
+
+    &:hover{
+        color:$black;
+    }
 }
 
 .cartXXL{

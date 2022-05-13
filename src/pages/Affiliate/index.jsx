@@ -1,41 +1,10 @@
 import React from 'react'
 import './Affiliate.scss'
-import TreeMenu from 'react-simple-tree-menu'
 import TreeViewMenu from 'react-simple-tree-menu'
 import {ListGroupItem, Input, ListGroup } from 'reactstrap';
 
 import Cart4 from '../../components/Cart4'
 
-const treeData = [
-  {
-    key: 'first-level-node-1',
-    label: 'saigon2021  - Hoàng thị nho -  ( Member: 414 - Personal Lending: 0.00 - System Lending: 0.00 )',
-    nodes: [
-      {
-        key: 'second-level-node-1',
-        label: 'ab6879  - NGUYEN DANG HA -  ( Member: 414 - Personal Lending: 0.00 - System Lending: 0.00 )',
-        nodes: [
-          {
-            key: 'third-level-node-1',
-            label: 'tamdan68  -  Nguyễn tâm Đan -   ( Member: 28 - Personal Lending: 0.00 - System Lending: 0.00 )',
-            nodes: [] // you can remove the nodes property or leave it as an empty array
-          },
-        ],
-      },
-      {
-        key: 'second-level-node-2',
-        label: 'van68  -  HOÀNG THU VAN -  ( Member: 414 - Personal Lending: 0.00 - System Lending: 0.00 )',
-        nodes: [
-          {
-            key: 'third-level-node-2',
-            label: 'typhubacha68  - Chu Thi Hiền -   ( Member: 28 - Personal Lending: 0.00 - System Lending: 0.00 )',
-            nodes: [] // you can remove the nodes property or leave it as an empty array
-          },
-        ],
-      },
-    ],
-  },
-];
 
 const treeData2 = [
   {
@@ -54,10 +23,18 @@ const treeData2 = [
         nodes: [
           {
             key: 'third-level-node-1',
-            label: 'tamdan68  -  Nguyễn tâm Đan -   ( Member: 28 - Personal Lending: 0.00 - System Lending: 0.00 )',
+            label: 'tamdan68  -  Nguyễn tâm Đan - ( Member: 28 - Personal Lending: 0.00 - System Lending: 0.00 )',
+            id:'binbo568',
+            fullName:'Nguyễn tâm Đan',
+            desc:'( Member: 28 - Personal Lending: 0.00 - System Lending: 0.00 )',
+            nodes: [] // you can remove the nodes property or leave it as an empty array
+          },
+          {
+            key: 'third-level-node-2',
+            label: 'binbo568 -  Lê thị kim Thuỷ - ( Member: 1 - Personal Lending: 0.00 - System Lending: 0.00 )',
             id:'tamdan68',
-            fullName:' Nguyễn tâm Đan',
-            desc:'( Member: 414 - Personal Lending: 0.00 - System Lending: 0.00 )',
+            fullName:' Lê thị kim Thuỷ',
+            desc:'  ( Member: 1 - Personal Lending: 0.00 - System Lending: 0.00 )',
             nodes: [] // you can remove the nodes property or leave it as an empty array
           },
         ],
@@ -85,9 +62,18 @@ const treeData2 = [
 
 const DEFAULT_PADDING = 16;
 const ICON_SIZE = 8;
-const LEVEL_SPACE = 30;
+const LEVEL_SPACE = 40;
 
-const ToggleIcon = ({ on }) => <span style={{ marginRight: 8 }}>{on ? '-' : '+'}</span>;
+const ToggleIcon = ({ on }) =>( 
+  <span style={{ marginRight: 8 }}>
+    {
+      on 
+      ? 
+      <i className="fa-solid fa-circle-minus primary-icon"></i> 
+      : 
+      <i className="fa-solid fa-circle-plus primary-icon"></i>
+    }
+  </span>);
 
 const ListItem = ({
   level = 0,
@@ -128,17 +114,16 @@ const ListItem = ({
         {/* <i className="fa-solid fa-pipe affiliate-tree-icon"></i> */}
         |
         <span className="affiliate-tree-id">
-            {id} 
+            {id + " "} 
         </span> 
-        - 
-        <span className="fradient-text">
+         -  
+        <span className="fradient-text margin-horizontal-5">
             {fullName}
         </span> 
         - 
-        {desc}
+        {" "+desc}
   </ListGroupItem>
 );
-
 
 export default function Affiliate() {
   return (
@@ -195,7 +180,10 @@ export default function Affiliate() {
                     {({ search, items }) => (
                         <>  
                             <div className="wrap-border-input">
-                                <Input onChange={e => search(e.target.value)} placeholder="Nhập ID để tìm kiếm..." className="primary-input"/>
+                                <Input 
+                                  onChange={e => search(e.target.value)} 
+                                  placeholder="Nhập ID để tìm kiếm..." 
+                                  className="primary-input"/>
                             </div>
                             <ListGroup>
                                 {
